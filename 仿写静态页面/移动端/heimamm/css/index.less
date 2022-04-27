@@ -1,0 +1,253 @@
+body {
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #f2f4f7;
+}
+a {
+    text-decoration: none;
+    color: #eaeaea;
+}
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 37.5px!important;
+    }
+}
+
+.wrap {
+    background-color: #fff;
+    padding-bottom: 1.066667rem;
+}
+// 顶部标题
+.header {
+    height: 2.133333rem;
+    text-align: center;
+    line-height: 2.133333rem;
+    font-size: .933333rem;
+    border-bottom: 1px solid #eaeaea;
+    color: #1c1c1c;
+}
+// 导航栏
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    a {
+        flex: 33.33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: .64rem 0 .8rem;
+        img {
+            width: 3.706667rem;
+            height: 3.706667rem;
+        }
+        span {
+            font-size: .666667rem;
+            color: #999;
+        }
+    }
+    
+}
+.nav a:nth-child(-n+3) {
+    padding-bottom: .8rem;
+}
+// go banner
+.go {
+    a {
+        display: block;
+        margin: 0 .533333rem 0 .533333rem;
+        img {
+               display: block; 
+               width: 100%;
+        }
+    }
+}
+// 就业指导
+.career_guidance {
+    padding: .986667rem .64rem;
+    margin-top: .426667rem;
+    background-color: #fff;
+    .con_hd {
+        height: 1.013333rem;
+        margin-bottom: 1.066667rem;
+        h3 {
+            float: left;
+            margin: 0;
+            font-size: .746667rem;
+            color: #333;
+            i {
+                display: inline-block;
+                width: 1.013333rem;
+                height: 1.013333rem;
+                background: url(../icons/i2.png) no-repeat;
+                background-size: 1.013333rem 1.013333rem;
+                vertical-align: middle;
+            }
+        }
+        a {
+            float: right;
+            font-size: .533333rem;
+            color: #999;
+        }
+    }
+    // 旋转木马模块
+    .get_job_focus {
+        position: relative;
+        .swiper-container {
+            width: 14.4rem;
+            height: 100%;
+          }
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            a {
+                width: 9.013333rem;
+                height: 10.026667rem;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            p {
+                width: 9.013333rem;
+                font-size: .666667rem;
+                color: #333333;
+            }
+      
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            transition: 300ms;
+            transform: scale(0.8);
+            opacity: 0.4;
+          }
+          .swiper-slide-active,
+          .swiper-slide-duplicate-active{
+            transform: scale(1);
+            z-index: 99;
+            opacity: 1;
+            
+          }
+    }
+}
+
+.get_job_focus .swiper-button-next,
+.get_job_focus .swiper-button-prev {
+    outline: none;
+}
+
+.get_job_focus .swiper-button-next::after,
+.get_job_focus .swiper-button-prev::after {
+    color: #333;
+    font-size: 1.12rem;
+}
+
+// 充电学习
+.recharge_learning {
+    padding: .986667rem .64rem;
+    margin-top: .426667rem;
+    margin-bottom: 3.76rem;
+    background-color: #fff;
+    .con_hd {
+        height: 1.013333rem;
+        margin-bottom: 1.066667rem;
+        h3 {
+            float: left;
+            margin: 0;
+            font-size: .746667rem;
+            color: #333;
+            i {
+                display: inline-block;
+                width: 1.013333rem;
+                height: 1.013333rem;
+                background: url(../icons/i2.png) no-repeat;
+                background-size: 1.013333rem 1.013333rem;
+                vertical-align: middle;
+            }
+        }
+        a {
+            float: right;
+            font-size: .533333rem;
+            color: #999;
+        }
+
+
+    }    
+}
+
+.study {
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+  
+      .swiper-slide {
+        text-align: left;
+        font-size: 18px;
+        background: #fff;
+        overflow: hidden;
+        width: 7.893333rem;
+        height: 9.013333rem;
+        border-radius: .266667rem;
+        box-shadow: 0 0 .266667rem rgba(0, 0, 0, 0.1);
+        
+        a {
+            display: block;
+            .title {
+                font-size: .666667rem;
+                color: #333;
+                font-weight: normal;
+                margin: .533333rem 0;
+                padding: 0 .266667rem;
+            }
+            .price {
+                font-size: .586667rem;
+                color: #999;
+                .num {
+                    color: #ff4400;
+                }
+            }
+        }
+      }
+}
+
+// 底部导航
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20rem;
+    display: flex;
+    height: 3.04rem;
+    border-top: 1px solid #e2e2e2;
+    background-color: #fff;
+    z-index: 999;
+    a {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 1.066667rem;
+            height: 1.04rem;
+        }
+        span {
+            font-size: .586667rem;
+            color: #666;
+        }
+    }
+}

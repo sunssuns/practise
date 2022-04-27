@@ -1,0 +1,119 @@
+/* 版心设置 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部logo模块 */
+.logo {
+    height: 82px;
+    border-bottom: 2px solid #b1191a;
+    padding-top: 20px;
+}
+
+/* 注册页主体区 */
+ .registee {
+     height: 522px;
+     border: 1px solid #dddddd;
+     margin-top: 22px;
+ }
+ .reg_hd {
+     height: 40px;
+     line-height: 40px;
+     background-color: #ececec;
+     border-bottom: 1px solid #dddddd;
+     font-size: 20px;
+     color: #333333;
+     padding: 0 10px;
+ }
+ .reg_hd h3 {
+     float: right;
+     font-size: 14px;
+     font-weight: 400;
+ }
+ .reg_hd h3 a {
+     color: #c81623;
+ }
+ .reg_bd {
+     width: 600px;
+     margin: 0 auto;
+ }
+.reg_bd ul{
+     margin-top: 54px;
+}
+.reg_bd ul li {
+     margin-bottom: 20px;
+}
+.prompt_right {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+.reg_bd .inp {
+     width: 240px;
+     height: 36px;
+     border: 1px solid #999999;
+}
+.reg_bd .error,
+.reg_bd .success {
+     margin-left: 10px;
+}
+
+.reg_bd .error img,
+.reg_bd .success img{
+     width: 20px;
+     height: 20px;
+     vertical-align: middle;
+}
+.safe {
+    font-size: 12px;
+    padding-left: 290px;
+}
+.safe .one,
+.safe .two, 
+.safe .three {
+    display: inline-block;
+    width: 34px;
+    height: 13px;
+    line-height: 13px;
+    text-align: center;
+    color: #000;
+}
+.safe .one {
+    background-color: red;
+}
+.safe .two {
+    background-color: orange;
+}
+.safe .three {
+    background-color: green;
+}
+.reg_agree {
+    padding-left: 88px;
+}
+.reg_agree input {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #dddddd;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.reg_btn input {
+    width: 200px;
+    height: 34px;
+    background-color: #c81623;
+    color: #fff;
+    border: 0;
+    margin-left: 98px;
+}
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+.mod_copyright a {
+    margin: 0 16px 0 15px;
+}
+.mod_copyright .links {
+    margin-bottom: 15px;
+    height: 20px;
+}

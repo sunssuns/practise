@@ -1,0 +1,109 @@
+/* 秒杀logo模块 */
+.header .spike {
+    position: absolute;
+    left: 185px;
+    top: 40px;
+    height: 32px;
+    width: 72px;
+    line-height: 32px;
+    border-left: 1px solid #b1191a;
+    padding-left: 14px;
+}
+.spike .spike_img {
+    width: 56px;
+    height: 26px;
+}
+
+/* nav导航模块 */
+.nav .nav-spike-hd {
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    color: #000;
+}
+.nav-spike-hd ul li {
+    float: left;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 28px;
+}
+.nav .nav-spike-sort {
+    float: left;
+    height: 46px;
+    line-height: 46px;
+}
+.nav-spike-sort ul li {
+    float: left;
+    font-size: 14px;
+    padding: 0 20px;
+}
+.nav-spike-sort ul li:last-child a::after {
+    font-family: "icomoon";
+    content: "\e91e";
+}
+.spike-big-img {
+    margin-bottom: 25px;
+}
+
+/* 列表主页模块 */
+.spike-bd {
+    margin: 12px 5px;
+}
+.spike-bd ul li {
+    overflow: hidden;
+    float: left;
+    width: 290px;
+    height: 460px;
+    border: 1px soild transparent;
+    margin-right: 10px;
+}
+.spike-bd ul li:nth-child(4n) {
+    margin-right: 0px;
+}
+.spike-bd ul li:hover {
+    border: 1px solid #b1191a;
+}
+.spike-goods-title {
+    padding: 0 12px;
+    margin: 12px 0;
+}
+.spike-goods-price {
+    padding: 0 12px;
+    margin: 12px 0;
+}
+.spike-goods-price>span {
+    font-size: 22px;
+    font-weight: 700;
+    color: #b1191a;
+}
+.spike-goods-bar {
+    padding: 0 12px;
+    margin: 6px 0;
+}
+.bar-box {
+    display: inline-block;
+}
+.bar-left {
+    float: left;
+    width: 100px;
+    height: 12px;
+    border: 1px solid #b1191a;
+    border-radius: 5px 0 0 5px;
+    border-right: 0;
+}
+.bar-right {
+    float: left;
+    width: 32px;
+    height: 12px;
+    border-radius: 0 5px 5px 0;
+    background-color: #b1191a;
+}
+.spike-button {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 292px;
+    background-color: #b1191a;
+    color: #fff;
+}

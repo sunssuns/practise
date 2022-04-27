@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑马面面</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <section class="wrap">
+        <!-- 顶部标题 -->
+        <header class="header">黑马面面</header>
+        <!-- 导航栏 -->
+        <nav class="nav">
+            <a href="#">
+                <img src="./icons/icon1.png" alt="">
+                <span>HR面试</span>
+            </a>
+            <a href="#">
+                <img src="./icons/icon2.png" alt="">
+                <span>笔试</span>
+            </a>
+            <a href="#">
+                <img src="./icons/icon3.png" alt="">
+                <span>技术面试</span>
+            </a>
+            <a href="#">
+                <img src="./icons/icon4.png" alt="">
+                <span>模拟面试</span>
+            </a>
+            <a href="#">
+                <img src="./icons/icon5.png" alt="">
+                <span>面试技巧</span>
+            </a>
+            <a href="#">
+                <img src="./icons/icon6.png" alt="">
+                <span>薪资查询</span>
+            </a>
+        </nav>
+        <!-- go banner -->
+        <section class="go">
+            <a href="#">
+                <img src="./images/go.png" alt="">
+            </a>
+        </section>
+    </section>
+    <!-- 就业指导模块 -->
+    <section class="career_guidance">
+        <div class="con_hd">
+            <h3>
+                <i></i>
+                就业指导
+            </h3>
+            <a href="#">更多</a>
+        </div>
+        <!-- 旋转木马模块 -->
+        <div class="get_job_focus">
+            <!-- Swiper -->
+            <div class="swiper-container get_job_fo">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/pic.png" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/pic.png" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/pic.png" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Arrows 根据需求这个代码放到 container外面 添加左右箭头-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- 充电学习模块 -->
+    <section class="recharge_learning">
+        <div class="con_hd">
+            <h3>
+                <i></i>
+                充电学习
+            </h3>
+            <a href="#">更多</a>
+        </div>
+        <div class="study">
+            <!-- Swiper -->
+            <div class="swiper-container good-good-study">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/pic1.png" alt="">
+                            <h5 class="title">说低调英语，告别中式英语</h5>
+                            <p class="price">
+                                <span class="num">
+                                    156人
+                                </span>
+                                学习
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/pic2.png" alt="">
+                            <h5 class="title">思维攻略金字塔思维提升写作能力</h5>
+                            <p class="price">
+                                <span class="num">
+                                    125人
+                                </span>
+                                学习
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/pic1.png" alt="">
+                            <h5 class="title">说低调英语，告别中式英语</h5>
+                            <p class="price">
+                                <span class="num">
+                                    156人
+                                </span>
+                                学习
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部导航 -->
+    <footer class="footer">
+        <a href="#"><img src="./icons/home.png" alt=""><span>首页</span></a>
+        <a href="#"><img src="./icons/net.png" alt=""><span>技术面试</span></a>
+        <a href="#"><img src="./icons/ms.png" alt=""><span>模拟面试</span></a>
+        <a href="#"><img src="./icons/user.png" alt=""><span>我的主页</span></a>
+    </footer>
+
+    <script src="./js/flexible.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        (function () {
+            var swiper = new Swiper('.get_job_fo', {
+                // 能够显示slider的个数
+                slidesPerView: 2,
+                // 每个slider之间的距离
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                // 添加左右箭头
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        })();
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.good-good-study', {
+            slidesPerView: 2.2,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,343 @@
+/* 通配符选择器可清除所有块元素的外边距和内边距 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+body {
+    background-color: #f3f5f7;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* 清除浮动 */
+.clearfix:before,.clearfix:after { 
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+
+.header {
+    height: 42px;
+    /* 注意此地方的margin会层叠w中的margin值 */
+    margin: 30px auto;
+}
+/* logo模块 */
+.logo {
+    float: left;
+    width: 200px;
+    height: 42px;
+    
+}
+/* 导航模块 */
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+}
+.nav ul li a {
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+}
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+    
+}
+
+/* 搜索模块 */
+.search {
+    float: left;
+    width: 412px;
+    height: 42px;
+    margin-left: 60px;
+    background-color: #00a4ff;
+    margin-left: 70px;
+}
+.search input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: 0;
+    color: gray;
+    font-size: 14px;
+    padding-left: 15px;
+}
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    border: 0;
+    background-image: url(images/btn.png);
+}
+
+/* 用户模块 */
+.user {
+    float: right;
+    height: 42px;
+    line-height: 42px;
+    margin-right: 30px;
+}
+
+
+
+/* banner模块 */
+.banner {
+    height: 412px;
+    background-color: #1c036c;
+}
+.banner .w {
+    height: 412px;
+    background: url(images/banner2_20190819_210028.png) no-repeat top center;
+}
+/* 侧导航模块 */
+.subnav {
+    float: left;
+    height: 412px;
+    width: 190px;
+    background: rgba(0,0,0, 0.3);
+}
+.subnav ul li {
+    height: 46px;
+    line-height: 46px;
+    padding: 0 20px;
+}
+
+.subnav ul li a{
+    font-size: 14px;
+    color: #fff;
+    
+}
+.subnav ul li a span {
+    float: right;
+    color: #fff;
+}
+/* 课程表模块 */
+.course {
+    float: right;
+    width: 230px;
+    height: 300px;
+    margin-top: 50px;
+    background-color: #fff;
+}
+.course h2 {
+    width: 230px;
+    height: 48px;
+    line-height: 48px;
+    background-color: #9bceea;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    font-size: 18px;
+    
+    
+}
+.bd {
+    padding: 0 20px;
+}
+.bd ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #a5a5a5;
+}
+.bd ul li h4 {
+    font-weight: normal;
+    font-size: 16px;
+    color: #4e4e4e;
+
+}
+.bd ul li p {
+    font-size: 12px;
+    color: #c3c3c3;
+}
+.bd .more {
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 5px;
+    color: #00a4ff;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+    text-align: center;
+    
+}
+
+/* 兴趣修改模块 */
+.goods {
+    height: 60px;
+    line-height: 60px;
+    margin-top: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px 3px rgba(0,0,0, 0.1)
+}
+
+.goods h3 {
+    float: left;
+    color: #00a4ff;
+    margin: 0 34px;
+
+}
+
+.goodsitems li {
+    float: left;
+}
+
+.goodsitems li a {
+    color: #050505;
+    font-size: 12px;
+    border-left: 1px solid #bfbfbf;
+    padding: 0 36px;
+}
+
+.goods .mod {
+    float: right;
+    color: #00a4ff;
+    font-size: 12px;
+    margin-right: 26px;
+
+}
+
+/* 精品推荐模块 */
+.box {
+    margin-top: 35px;
+} 
+.box-hd {
+    height: 45px;
+}
+.box-hd h3 {
+    float: left;
+    color: #494949;
+    font-size: 20px;
+}
+.box-hd a {
+    float: right;
+    color: #a5a5a5;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-right: 32px;
+}
+.box-bd ul {
+    width: 1215px;
+}
+.box-bd ul li{
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #ffffff;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.box-bd ul li img {
+    width: 100%;
+} 
+.box-bd ul li h4 {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 25px 25px 20px 20px;
+}
+.info {
+    color: #999999;
+    font-size: 11px;
+    margin: 0 85px 0 23px;
+}
+.info span {
+    color: #ff7c2d
+}
+
+/* 编程入门模块 */
+.startcoding {
+    height: 65px;
+    line-height: 80px;
+    
+}
+.startcoding h3 {
+    float: left;
+    font-weight: normal;
+    font-size: 20px;
+    color: #494949;
+}
+.startcoding ul {
+    margin-left: 356px;
+}
+.startcoding ul li {
+    float: left;
+    margin-right: 72px;
+    font-size: 12px;
+    color: #868686;
+}
+.startcoding .a {
+    font-size: 15px;
+    color: #00a4ff;
+}
+.startcoding a {
+    float: right;
+    color: #a5a5a5;
+    font-size: 11px;
+    margin-right: 32px;
+}
+
+/* footer模块开始 */
+.footer {
+    height: 417px;
+    background-color: #ffffff;
+    margin-top: 40px;
+}
+.footer .w {
+    padding-top: 35px;
+}
+.copyright {
+    float: left;
+}
+
+.copyright p {
+    font-size: 12px;
+    color: #666666;
+    margin: 20px 0 15px 0;
+}
+.copyright a {
+    display: block;
+    width: 118px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    color: #00a4ff;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+}
+.links {
+    float: right;
+}
+.links dl {
+    float: left;
+    margin-left: 120px;
+} 
+.links dt {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+.links dd {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 9px;
+}

@@ -1,0 +1,165 @@
+.cart-filter-bar {
+    font-size: 16px;
+    color: #c81623;
+    font-weight: bold;
+}
+.cart-filter-bar em {
+    border-bottom: 1px solid #c81623;
+    padding: 5px;
+}
+/* 头部全选模块 */
+.cart-thead {
+    height: 37px;
+    line-height: 37px;
+    background-color: #f3f3f3;
+    margin: 5px 0 10px;
+}
+.cart-thead>div {
+    float: left;
+}
+.t-checkbox,
+.p-checkbox {
+    width: 122px;
+    height: 18px;
+    line-height: 18px;
+    padding-left: 11px;
+    padding-top: 7px;
+}
+.checkall {
+    vertical-align: middle;
+}
+.t-goods {
+    width: 400px;
+}
+.t-price {
+    width: 120px;
+    padding-right: 40px;
+    text-align: right;
+}
+.t-num {
+    width: 150px;
+    text-align: center;
+}
+.t-sum {
+    width: 100px;
+    text-align: right;
+}
+.t-action {
+    width: 130px;
+    text-align: right;
+}
+/* 商品显示模块 */
+.check-cart-item {
+    background-color: #fff4e8;
+}
+.cart-item {
+    height: 160px;
+    border-width: 2px 1px 1px;
+    border-style: solid;
+    border-color: #aaa #f1f1f1 #f1f1f1;
+    padding-top: 14px;
+    margin: 15px 0;
+}
+.cart-item>div {
+    float: left;
+}
+.p-checkbox {
+    width: 50px;
+}
+.p-goods {
+    width: 525px;
+    margin-top: 8px;
+}
+.p-img {
+    float: left;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+.p-msg {
+    float: left;
+    width: 210px;
+    margin: 0 15px;
+}
+.p-price {
+    width: 110px;
+}
+.p-num {
+    width: 170px;
+}
+.quantity-form {
+    width: 88px;
+    height: 22px;
+}
+.decrement,
+.increment {
+    float: left;
+    width: 16px;
+    height: 18px;
+    line-height: 18px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #cacbcb;
+}
+.increment {
+    margin-left: -1px;
+}
+.itxt {
+    float: left;
+    width: 42px;
+    height: 18px;
+    line-height: 18px;
+    background-color: #fff;
+    text-align: center;
+    outline: none;
+    border: 1px solid #cacbcb;
+    font-size: 12px;
+    font-family: verdana;
+    margin-left: -1px;
+}
+.p-sum {
+    width: 145px;
+}
+
+/* 计算模块 */
+.cart-floatbar {
+    height: 50px;
+    border: 1px solid #f0f0f0;
+    line-height: 50px;
+    margin-bottom: 50px;
+
+}
+.cart-floatbar>div {
+    float: left;
+}
+.cart-floatbar .toolbar {
+    float: right;
+}
+.toolbar>div {
+    float: left;
+}
+.select-all {
+    width: 80px;
+    padding-left: 11px;
+}
+.amount-sum em,
+.price-sum em {
+    color: #e54346;
+    font-weight: 800;
+}
+.amount-sum {
+    margin-right: 10px;
+}
+.price-sum {
+    margin-right: 10px;
+}
+.btn-area {
+    width: 92px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    background-color: #e54346;
+    text-align: center;
+    margin-top: -1px;
+}
+

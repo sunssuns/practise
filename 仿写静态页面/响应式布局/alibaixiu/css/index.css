@@ -1,0 +1,182 @@
+/* 设计稿最大宽度为1280px */
+@media screen and (min-width: 1280px) {
+    body {
+        width: 1280px;
+    }
+}
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+
+/* 左侧header模块 */
+header {
+    padding-left: 0!important;
+    margin-bottom: 10px;
+}
+.logo {
+    background-color: #429ad9;
+}
+.logo span {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+.logo img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.nav {
+    margin-top: -1px;
+}
+.nav a {
+    display: block;
+    height: 50px;
+    color: #666;
+    background-color: #eee;
+    line-height: 50px;
+    font-size: 16px;
+    padding-left: 30px;
+}
+.nav a::before {
+    padding-right: 5px;
+    vertical-align: middle;
+}
+.nav a:hover {
+    background-color: #fff;
+    color: #999;
+}
+/* 中间模块 */
+/* .news */
+.news {
+    border-bottom: 1px solid #e2e2e2;
+}
+.news ul li {
+    float: left;
+    width: 25%;
+    height: 128px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    /* background-color: pink; */
+}
+.news ul li:nth-child(1) {
+    width: 50%;
+    height: 266px;
+}
+.carousel-inner>.item>img {
+    width: 100%;
+    height: 266px;
+}
+.news ul li>a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-color: tomato; */
+}
+.news ul li a img {
+    width: 100%;
+    height: 100%;
+    /* background-color: turquoise; */
+}
+.news ul li a p,
+.carousel-caption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 12px;
+    padding: 5px 8px;
+    color: #fff;
+    margin-bottom: 0;
+}
+.carousel-caption {
+    line-height: 41px;
+    font-size: 16px;
+    padding: 0;
+}
+.news ul li:nth-child(1) a p {
+    padding: 0;
+    font-size: 26px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+/* .pubblish */
+.pubblish .row {
+    border-bottom: 1px solid #e2e2e2;
+    padding: 10px 0;
+}
+.pubblish .row .pic {
+    margin-top: 10px;
+}
+/* .pubblish .row a {
+    color: #666;
+} */
+.pubblish .row img {
+    width: 100%;
+}
+
+
+/* 右侧模块 */
+.banner img {
+    width: 100%;
+}
+.hot {
+    display: block;
+    border: 1px solid #e2e2e2;
+    margin-top: 20px;
+    padding: 0 20px 20px;
+}
+.hot span {
+    display: inline-block;
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 16px;
+    margin-bottom: 20px;
+}
+.hot p {
+    font-size: 12px;
+    color: #666;
+}
+/* 响应式 */
+@media screen and (max-width: 992px) {
+    .logo img {
+        width: 190px;
+        height: 120px;
+    }
+    .nav li {
+        float: left;
+        width: 20%;
+    }
+  
+}
+@media screen and (max-width: 751px) {
+    .news ul li {
+        width: 50%;
+    }
+    .news ul li:nth-child(1) {
+        width: 100%;
+    }
+
+}
+
