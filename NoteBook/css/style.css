@@ -8,15 +8,49 @@
   height: 100vh;
   display: flex;
 }
+/* 左边布局样式 */
 .left {
+  position: relative;
   flex: 1.5;
-  background-color: #260339;
+  background-color: #191818;
+  color: #666564;
+}
+.left .title {
+  margin-top: 36px;
+  text-align: center;
+} 
+.left .addNote {
+  position: absolute;
+  right: 50%;
+  bottom: 30%;
+  transform: translate(50%, 0);
+  text-align: center;
+}
+.left .delNote {
+  position: absolute;
+  right: 12%;
+  bottom: 6%;
+  text-align: right;
+}
+.left .iconfont {
+  font-size: 26px;
+  /* padding: 10px; */
   color: #fff;
+}
+.left .notebookName {
+  margin-top: 60px;
+}
+.left .notebookName li {
+  list-style: none;
+  padding: 6px 0;
+  padding-left: 26px;
 }
 .center {
   flex:3.5;
-  padding: 0 20px;
+  border-left: 12px solid #eeeeee;
+  border-right: 12px solid #eeeeee;
 }
 .right {
   flex: 5;
+  min-width: 200px;
 }
