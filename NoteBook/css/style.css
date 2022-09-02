@@ -18,7 +18,8 @@
 .left .title {
   margin-top: 36px;
   text-align: center;
-} 
+  color: #666564;
+}
 .left .addNote {
   position: absolute;
   right: 50%;
@@ -49,6 +50,47 @@
   flex:3.5;
   border-left: 12px solid #eeeeee;
   border-right: 12px solid #eeeeee;
+  padding: 0 8px;
+}
+.center>.title {
+  margin-top: 36px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
+  color: #c8c9cf;
+}
+.center .title .editNote {
+  background-color: #da3610;
+  padding: 4px 30px;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+}
+.center .summary {
+  margin-top: 60px;
+}
+.center .summary li {
+  list-style: none;
+  background-color: #f6f6f6;
+  padding: 6px;
+  margin-bottom: 6px;
+}
+.summary li .title {
+  margin-bottom: 6px;
+  font-size: 16px;
+  color: #857e76;
+}
+.summary li p {
+  font-size: 14px;
+  color: #828282;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
 }
 .right {
   flex: 5;
