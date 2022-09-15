@@ -15,7 +15,7 @@
   background-color: #191818;
   color: #666564;
 }
-.left .title {
+.left>.title {
   margin-top: 36px;
   text-align: center;
   color: #666564;
@@ -92,7 +92,24 @@
   word-break: break-all;
   -webkit-box-orient: vertical;
 }
+
+
 .right {
   flex: 5;
   min-width: 200px;
+  overflow: hidden;
+}
+.right .top {
+  height: 140px;
+  background-color: #da3610;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right .title{
+  color: #fff;
+  font-size: 36px;
+}
+.right .content {
+  padding: 25px;
 }
